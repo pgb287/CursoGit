@@ -1,0 +1,25 @@
+sobre el directorio donde tengo los archivos
+git init
+
+listar los archivos y carpetas que tenemos en el directorio, si aparecen con signo de pregunta es porque no se le esta haciendo seguimiento 
+git status -s
+
+agregar un archivo a seguimiento. se marca con una letra A (esta en stagin area)
+git add nombre_archivo.xxx
+
+crear copia de respaldo, una instantanea. (debe estar en seguimiento A) (si es la primera vez te pide ingresar usuario y correo)
+git commit -m "descripcion del comit que se realiza"
+
+despues de comitear y modificar el archivo cuando hacemos un git status figura con una letra M roja (quiere decir que la nueva modificacion no fue respaldada aun)
+
+listado de todos los respaldos realizados, los commits (doble guion y oneline
+git log --oneline
+
+volver a una copia anterior, es decir cargar una instantanea anterior
+git reset --hard codigo_instantanea
+
+para agregar todos los archivos al stage area
+git add .
+
+agregar los archivos al stagin area y hacer commit en un solo comando
+git commit -am "descripcion del comit que se realiza"
