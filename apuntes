@@ -4,6 +4,9 @@ git init
 listar los archivos y carpetas que tenemos en el directorio, si aparecen con signo de pregunta es porque no se le esta haciendo seguimiento 
 git status -s
 
+para agregar todos los archivos al stage area
+git add .
+
 agregar un archivo a seguimiento. se marca con una letra A (esta en stagin area)
 git add nombre_archivo.xxx
 
@@ -17,9 +20,6 @@ git log --oneline
 
 volver a una copia anterior, es decir cargar una instantanea anterior
 git reset --hard codigo_instantanea
-
-para agregar todos los archivos al stage area
-git add .
 
 agregar los archivos al stagin area y hacer commit en un solo comando
 git commit -am "descripcion del comit que se realiza"
