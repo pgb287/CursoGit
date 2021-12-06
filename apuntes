@@ -13,13 +13,38 @@ git add nombre_archivo.xxx
 crear copia de respaldo, una instantanea. (debe estar en seguimiento A) (si es la primera vez te pide ingresar usuario y correo)
 git commit -m "descripcion del comit que se realiza"
 
+agregar los archivos al stagin area y hacer commit en un solo comando
+git commit -am "descripcion del comit que se realiza"
+
 despues de comitear y modificar el archivo cuando hacemos un git status figura con una letra M roja (quiere decir que la nueva modificacion no fue respaldada aun)
 
 listado de todos los respaldos realizados, los commits (doble guion y oneline
+git log
+
+listado de commits en forma resumida
 git log --oneline
 
 volver a una copia anterior, es decir cargar una instantanea anterior
 git reset --hard codigo_instantanea
 
-agregar los archivos al stagin area y hacer commit en un solo comando
-git commit -am "descripcion del comit que se realiza"
+sacar un archivo del seguimiento
+git rm --cached file_name
+
+agregar las modificaciones realizadas en guthub al directorio local
+git pull
+
+clonar repositorio de github al directorio local, primero crear una carpeta 
+git clone https://github.com/pgb287/CursoGit.git
+
+mostrar las diferencias es decir lo que modificamos
+git diff
+
+cargar los archivos en github (actualizar en github)
+git push origin main
+
+cargar los archivos desde github (actualizar en directorio local)
+git pull origin master
+
+Una buena practica en trabajos grupales es hacer un git pull antes de empezar a codear para poder bajar la ultima version actualizada del proyecto
+
+
