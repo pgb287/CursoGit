@@ -47,4 +47,8 @@ git pull origin master
 
 Una buena practica en trabajos grupales es hacer un git pull antes de empezar a codear para poder bajar la ultima version actualizada del proyecto
 
+Subir proyecto a Github por primera vez (debe existe aunque sea un 1 commit para poder subirlo):
+git remote add origin https://github.com/pgb287/nombre_repositorio.git
+git branch -M main
+git push -u origin main
 
