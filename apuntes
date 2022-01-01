@@ -28,7 +28,7 @@ volver a una copia anterior, es decir cargar una instantanea anterior
 git reset --hard codigo_instantanea
 
 sacar un archivo del seguimiento
-git rm --cached file_name
+git rm file_name --cached
 
 agregar las modificaciones realizadas en guthub al directorio local
 git pull
