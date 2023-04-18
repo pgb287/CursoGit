@@ -1,28 +1,57 @@
-sobre el directorio donde tengo los archivos
+Version de GIT
+git --version
+
+Configurar el usuario y el email de manera global
+git config --global user.name "Pablo Bustos"
+git config --global user.email pgb287@gmail.com    (no es necesario las comillas dobles)
+
+Ver el usuario y el email (en el caso que ya estaban configurados)
+git config --global user.name
+git config --global user.email
+
+Ver todas las configuraciones
+git config --list
+
+Iniciar un repositorio, ubicarse en la consola sobre el directorio donde guardaré los archivos
 git init
 
-listar los archivos y carpetas que tenemos en el directorio, si aparecen con signo de pregunta es porque no se le esta haciendo seguimiento 
+Listar los archivos y carpetas que tenemos en el directorio, si aparecen con signo de pregunta es porque no se le esta haciendo seguimiento.
 git status -s
+git status
 
-para agregar todos los archivos al stage area
+Para agregar todos los archivos al stage area. No es una forma recomendable a menos que sepamos exactamente todo lo que pasamos a seguimiento.
 git add .
 
-agregar un archivo a seguimiento. se marca con una letra A (esta en stagin area)
+Agregar un archivo a seguimiento. se marca con una letra A (esta en stagin area)
 git add nombre_archivo.xxx
+git add nombre_archivo1.xxx nombre_archivo2.xxx
 
-crear copia de respaldo, una instantanea. (debe estar en seguimiento A) (si es la primera vez te pide ingresar usuario y correo)
+Crear copia de respaldo, una instantanea. (debe estar en seguimiento A) (si es la primera vez te pide ingresar usuario y correo)
 git commit -m "descripcion del comit que se realiza"
 
-agregar los archivos al stagin area y hacer commit en un solo comando
+Agregar los archivos al stagin area y hacer commit en un solo comando
 git commit -am "descripcion del comit que se realiza"
 
-despues de comitear y modificar el archivo cuando hacemos un git status figura con una letra M roja (quiere decir que la nueva modificacion no fue respaldada aun)
+Despues de comitear y modificar el archivo cuando hacemos un git status figura con una letra M roja (quiere decir que la nueva modificacion no fue respaldada aun)
 
-listado de todos los respaldos realizados, los commits (doble guion y oneline
+Listado de todos los commits realizados
 git log
 
-listado de commits en forma resumida
+Listado de commits en forma resumida
 git log --oneline
+
+-----------------------
+Eliminar un archivo desde git. Lo elimina del directorio y agrega el cambio (delete) al stagin area
+git rm archivo.txt
+
+Si quiero volver atras el paso anterior, es decir traer nuevamente el archivo (delete) del stagin area y dejar sin seguimiento 
+git restore --staged archivo.txt
+
+Si quiero quiero descartar la eliminacion y volver el archivo al directorio 
+git restore archivo.txt
+------------------------
+Renombrar un archivo desde git 
+
 
 volver a una copia anterior, es decir cargar una instantanea anterior
 git reset --hard codigo_instantanea
