@@ -1,4 +1,4 @@
-Version de GIT
+VERSION DE GIT
 git --version
 
 Configurar el usuario y el email de manera global
@@ -47,11 +47,15 @@ git rm archivo.txt
 Si quiero volver atras el paso anterior, es decir traer nuevamente el archivo (delete) del stagin area y dejar sin seguimiento 
 git restore --staged archivo.txt
 
-Si quiero quiero descartar la eliminacion y volver el archivo al directorio 
+Si quiero descartar la eliminacion y volver el archivo al directorio 
 git restore archivo.txt
 ------------------------
-Renombrar un archivo desde git 
+Renombrar un archivo en consola: rm origen destino
+mv archivo_origen.txt archivo_destino.txt
 
+Renombrar con git. La diferencia con el anterior es que al renombrarlo pasa automaticamente al area de stagin listo para comitear
+git mv archivo_origen.txt archivo_destino.txt
+-------------------------
 
 volver a una copia anterior, es decir cargar una instantanea anterior
 git reset --hard codigo_instantanea
