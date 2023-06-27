@@ -1,15 +1,16 @@
-### Version de GIT
+Version de GIT
 git --version
-### Configurar el usuario y el email de manera global
+
+Configurar el usuario y el email de manera global
 git config --global user.name "Pablo Bustos"
 git config --global user.email pgb287@gmail.com (no es necesario las comillas dobles)
-### Ver el usuario y el email (en el caso que ya estaban configurados)
+
+Ver el usuario y el email (en el caso que ya estaban configurados)
 git config --global user.name
 git config --global user.email
-### Ver todas las configuraciones
+
+Ver todas las configuraciones
 git config --list
-
-
 
 Iniciar un repositorio, ubicarse en la consola sobre el directorio donde guardaré los archivos
 git init
