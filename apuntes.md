@@ -1,4 +1,4 @@
-VERSION DE GIT
+##VERSION DE GIT
 git --version
 
 Configurar el usuario y el email de manera global
